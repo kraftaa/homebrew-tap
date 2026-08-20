@@ -1,5 +1,18 @@
 # Kraftaa Tap
 
+## Embed Parity
+
+Install [embed-parity](https://github.com/kraftaa/parity-checker) on an
+Apple-silicon Mac:
+
+```bash
+brew install kraftaa/tap/embed-parity
+embed-parity --version
+```
+
+The formula includes the SentenceTransformers runtime needed to compare a
+local model with a Text Embeddings Inference deployment.
+
 ## Whyslow
 
 Install [Whyslow](https://github.com/kraftaa/whyslow):
