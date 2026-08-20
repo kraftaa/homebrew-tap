@@ -1,5 +1,17 @@
 # Kraftaa Tap
 
+## Whyslow
+
+Install [Whyslow](https://github.com/kraftaa/whyslow):
+
+```bash
+brew install kraftaa/tap/whyslow-db
+whyslow --version
+```
+
+Upgrade it later with `brew update && brew upgrade whyslow-db`. The formula
+installs the `whyslow-db` package and exposes the `whyslow` command.
+
 ## How do I install these formulae?
 
 `brew install kraftaa/tap/<formula>`
