@@ -16,7 +16,7 @@ class WhyslowDb < Formula
   end
 
   def install
-    ENV.prepend_path "PATH", Formula["libpq"].opt_bin
+    ENV.prepend_path "PATH", formula_opt_bin("libpq")
     virtualenv_install_with_resources
   end
 
