@@ -1,5 +1,20 @@
 # Kraftaa Tap
 
+## Codebase Observatory
+
+Install [Codebase Observatory](https://github.com/kraftaa/codebase-observatory):
+
+```bash
+brew install kraftaa/tap/observatory
+observatory --version
+```
+
+Analyze uncommitted work in the current repository:
+
+```bash
+observatory impact --repo "$PWD" --base HEAD --working-tree --json
+```
+
 ## Embed Parity
 
 Install [embed-parity](https://github.com/kraftaa/parity-checker) on an
