@@ -15,6 +15,9 @@ Open the interactive review map for uncommitted work in the current repository:
 observatory review --repo "$PWD" --base HEAD --working-tree
 ```
 
+The review map includes JavaScript/TypeScript symbol impact, explicit analysis
+coverage, and partial GitHub Actions workflow findings.
+
 Generate machine-readable impact evidence:
 
 ```bash
