@@ -9,7 +9,13 @@ brew install kraftaa/tap/observatory
 observatory --version
 ```
 
-Analyze uncommitted work in the current repository:
+Open the interactive review map for uncommitted work in the current repository:
+
+```bash
+observatory review --repo "$PWD" --base HEAD --working-tree
+```
+
+Generate machine-readable impact evidence:
 
 ```bash
 observatory impact --repo "$PWD" --base HEAD --working-tree --json

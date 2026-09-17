@@ -1,8 +1,8 @@
 class Observatory < Formula
   desc "Explain what a code change affects before it is merged"
   homepage "https://github.com/kraftaa/codebase-observatory"
-  url "https://github.com/kraftaa/codebase-observatory/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "51b748fc7ad794ed8c6ab8b5082f1f1258bb0d9851ecbc384c247a16d67d0a9c"
+  url "https://github.com/kraftaa/codebase-observatory/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "fdb8d7397bbc085686190744d0762bca77f877b26b9c44578c5f607597265458"
   license "Apache-2.0"
 
   depends_on "node"
@@ -13,7 +13,7 @@ class Observatory < Formula
   end
 
   def install
-    libexec.install "bin", "scripts", "package.json"
+    libexec.install "bin", "scripts", "ui", "package.json"
     resource("typescript").stage do
       (libexec/"node_modules/typescript").install Dir["*"]
     end
@@ -22,6 +22,8 @@ class Observatory < Formula
 
   test do
     assert_equal version.to_s, shell_output("#{bin}/observatory --version").strip
+    assert_match "observatory review", shell_output("#{bin}/observatory --help")
+    assert_path_exists libexec/"ui/review.html"
 
     fixture = testpath/"fixture"
     fixture.mkpath
