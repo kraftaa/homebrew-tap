@@ -1,8 +1,8 @@
 class Observatory < Formula
   desc "Explain what a code change affects before it is merged"
   homepage "https://github.com/kraftaa/codebase-observatory"
-  url "https://github.com/kraftaa/codebase-observatory/archive/refs/tags/v0.3.1.tar.gz"
-  sha256 "1ca8d2e8753dcdf5f1d1322c93bae3b187cc5d67c613e0372662ce313f314fbd"
+  url "https://github.com/kraftaa/codebase-observatory/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "0915535993ae50ce3434bf40480bc7fc03ca83dc5737c4d52539e5cd0a67655b"
   license "Apache-2.0"
 
   depends_on "node"
