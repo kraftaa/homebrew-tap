@@ -1,7 +1,6 @@
 class Botgate < Formula
   desc "Evidence-first Web Bot Auth conformance and coverage analyzer"
   homepage "https://github.com/kraftaa/botgate"
-  version "0.1.0"
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/kraftaa/botgate/releases/download/v0.1.0/botgate-aarch64-apple-darwin.tar.xz"
@@ -70,5 +69,9 @@ class Botgate < Formula
     # Install any leftover files in pkgshare; these are probably config or
     # sample files.
     pkgshare.install(*leftover_contents) unless leftover_contents.empty?
+  end
+
+  test do
+    assert_match "botgate #{version}", shell_output("#{bin}/botgate --version")
   end
 end
