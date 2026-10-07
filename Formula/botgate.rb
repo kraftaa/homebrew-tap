@@ -3,22 +3,22 @@ class Botgate < Formula
   homepage "https://github.com/kraftaa/botgate"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/kraftaa/botgate/releases/download/v0.1.0/botgate-aarch64-apple-darwin.tar.xz"
-      sha256 "6e9581fffa419708e5e59ac5a9efa20c0d530f1a459f5c44a60b13f66b5d200e"
+      url "https://github.com/kraftaa/botgate/releases/download/v0.2.1/botgate-aarch64-apple-darwin.tar.xz"
+      sha256 "9358c4a1efcd378bf544f928827ada26fc99deb8ae87b48e92b300ba1c770e76"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kraftaa/botgate/releases/download/v0.1.0/botgate-x86_64-apple-darwin.tar.xz"
-      sha256 "a454ffcf1a4c52fe68afd3f9c5653a330e1483f4572b6729cd749d32d770d738"
+      url "https://github.com/kraftaa/botgate/releases/download/v0.2.1/botgate-x86_64-apple-darwin.tar.xz"
+      sha256 "a8d8d7e61a3265858aa0fbcdc0725a9ad5b6cc19bd2a7caf347ac6b4c8b09fdb"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/kraftaa/botgate/releases/download/v0.1.0/botgate-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "fbc0263ac2521b8a59eccb1da7e3829059541766569c1f916fd3d2a9ab3c84b3"
+      url "https://github.com/kraftaa/botgate/releases/download/v0.2.1/botgate-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "9bdc51b9fccbd2f9ea8bf850c1e6b1176febdf4f60fef3f5e4b9785cca36eb82"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kraftaa/botgate/releases/download/v0.1.0/botgate-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "aa46f92c64d16d83a8ba086545ef196aa275aa96c56dcaaae481a202394deda3"
+      url "https://github.com/kraftaa/botgate/releases/download/v0.2.1/botgate-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "be5a6aefc5ae7ed6b330b6edaac685b863778bf2c494130dea70789e2fb0bb5c"
     end
   end
   license "MIT"
