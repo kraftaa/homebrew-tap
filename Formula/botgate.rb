@@ -1,24 +1,24 @@
 class Botgate < Formula
-  desc "Evidence-first Web Bot Auth conformance and coverage analyzer"
+  desc "Test what Web Bot Auth signatures protect and whether servers enforce policy"
   homepage "https://github.com/kraftaa/botgate"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/kraftaa/botgate/releases/download/v0.4.0/botgate-aarch64-apple-darwin.tar.xz"
-      sha256 "4991b623f1e6874901dd0db7978f9104d4d3e46b6063764b69fcf1f520abc422"
+      url "https://github.com/kraftaa/botgate/releases/download/v0.4.1/botgate-aarch64-apple-darwin.tar.xz"
+      sha256 "b05d30d933dff4f284b6d334ff621e71012007d4188a4c5a5f29f3dd7b557feb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kraftaa/botgate/releases/download/v0.4.0/botgate-x86_64-apple-darwin.tar.xz"
-      sha256 "e2be4f44bf70d32fce5de1b229eae2a7a19938229b44a0f71a013f6382d9750f"
+      url "https://github.com/kraftaa/botgate/releases/download/v0.4.1/botgate-x86_64-apple-darwin.tar.xz"
+      sha256 "e4f65812eb0c38c440725b2a1791536e59aae83368725d2a3662fcc2bf13e9fb"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/kraftaa/botgate/releases/download/v0.4.0/botgate-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "522907972e21b606ba55489ab420a24ec28c3b9b1a10310202a549682fa105dd"
+      url "https://github.com/kraftaa/botgate/releases/download/v0.4.1/botgate-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "2d1e4bb886b613a1685afbac7fb9c1977d2031fdb3e874ea0a2489095c0e09cb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kraftaa/botgate/releases/download/v0.4.0/botgate-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "094602c804a47c34f385575364ea481838935bbc048881d74ed50839f539768a"
+      url "https://github.com/kraftaa/botgate/releases/download/v0.4.1/botgate-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a8001e9aa0660b8173dd880d052a000588a933db14ec3a030f43e7ca6801b79a"
     end
   end
   license "MIT"
